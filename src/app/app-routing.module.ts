@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:"fillenProdat",component:FillenProdatComponent},
   {path:"productPage",component:ProductPageComponent},
   {path:"sideBar",component:SideBarComponent},
-  {path:'**',component:SideBarComponent}
+  // {path:'**',component:SideBarComponent}
 ];
 
 @NgModule({

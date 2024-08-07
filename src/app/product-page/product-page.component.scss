@@ -1,0 +1,33 @@
+$primary-color: #5C59E8;
+body{
+    background:  #FFFFFF;
+    border: 1px solid #C2C6CE
+}
+.text{
+    display: flex;
+    align-items: center;
+    // background-color: wheat;
+}
+.input{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding-bottom:0px;
+}
+.data{
+    display: flex;
+    align-items: center;  
+}
+.data .color{
+ color: #5C59E8
+}
+.product{
+    padding-bottom:0px; 
+}
+.button{
+    background-color: #5C59E8;
+}
+.table2{
+    border: 1px solid #C2C6CE;
+    background-color: #264fa9 ;
+}

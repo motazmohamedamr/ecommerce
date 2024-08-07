@@ -1,1 +1,140 @@
-<p>product-page works!</p>
+<!-- <p>product-page works!</p> -->
+ 
+  <div class="container py-5 product">
+    <div class="row " >
+        <div>
+            <h2>product</h2>
+        </div>
+        <div class="data py-1">
+            <h3 class=" color" > Dashboard  </h3> 
+            <h2>  >  product List </h2>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2 button" type="button"> +  Add Product </button>
+          </div>
+    </div>
+  </div>
+       <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="input " >
+                    <input type="text" class="form-control w-75 text py-1 "  [(ngModel)]="searchInput" placeholder=" &#xF002; search product" >
+                    <hr>
+                    <h2>{{searchInput}}</h2>
+                  </div>
+            </div>        
+            
+            
+               <div class="col-lg-6  py-1 ">
+
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-light me-md-2" type="button">
+                        <img src="../../assets/calendar alt.png" alt="calendar"> 
+                          select Dates 
+                        </button>
+                    <button class="btn btn-light" type="button">
+                         <img src="../../assets/icon (2).png" alt="Filter">
+                          Filter
+                        </button>
+                  </div>
+               </div>
+
+          </div>
+          <div class="table py-2">
+            <table class="table">
+                <tr class="table2">
+                  <th>product <i class="fa fa-caret-down" style="font-size: 15px;display: inline;" aria-hidden="true"></i></th>
+                  <th>sku</th>
+                  <th>catagory</th>
+                  <th>stock  <i class="fa fa-caret-down" style="font-size: 15px;display: inline;" aria-hidden="true"></i></th>
+                  <th>price <i class="fa fa-caret-down" style="font-size: 15px;display: inline;" aria-hidden="true"></i></th>
+                  <th>status <i class="fa fa-caret-down" style="font-size: 15px;display: inline;" aria-hidden="true"></i></th>
+                  <th>Added <i class="fa fa-caret-down" style="font-size: 15px;display: inline;" aria-hidden="true"></i></th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>Hande pouch</td>
+                  <td>302012</td>
+                  <td>Bag & pouch</td>
+                  <td>10</td>
+                  <td>$121.00</td>
+                  <td>Low stock</td>
+                  <td>29 Dec 2022</td>
+                  <td>--------</td>
+                </tr>
+                <tr>
+                  <td>smartwacmh E2</td>
+                  <td>302011</td>
+                  <td>Watch</td>
+                  <td>204</td>
+                  <td>$590.00</td>
+                  <td>published</td>
+                  <td>24 Dec 2022</td>
+                  <td> ------</td>
+                </tr>
+                <tr>
+                    <td>smartwacmh E1</td>
+                    <td>302002</td>
+                    <td>Watch</td>
+                    <td>48</td>
+                    <td>$125.00</td>
+                    <td>Draft</td>
+                    <td>12 Dec 2022</td>
+                    <td> --------</td>
+                </tr>
+                <tr>
+                    <td>Headphone G1 pro</td>
+                    <td>301901</td>
+                    <td>Audio</td>
+                    <td>401</td>
+                    <td>$348.00</td>
+                    <td>published</td>
+                    <td>21 Oct 2022</td>
+                    <td> ------</td>
+                  </tr>
+                  <tr>
+                    <td>Iphone x</td>
+                    <td>301900</td>
+                    <td>smart phone</td>
+                    <td>120</td>
+                    <td>$607.00</td>
+                    <td>published</td>
+                    <td>21 Oct 2022</td>
+                    <td> ------</td>
+                  </tr>
+
+              </table>
+              <!-- <div class="btn-toolbar mb-3 md-end" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2 md-end" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-outline-secondary ">1</button>
+                  <button type="button" class="btn btn-outline-secondary ">2</button>
+                  <button type="button" class="btn btn-outline-secondary ">3</button>
+                  <button type="button" class="btn btn-outline-secondary ">4</button>
+                </div> -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <nav aria-label="Page navigation example" >
+                        <ul class="pagination ">
+                          <li class="page-item ">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+           
+
+        </div>
+       </div>
+
+       
+      
