@@ -27,7 +27,26 @@ body{
 .button{
     background-color: #5C59E8;
 }
-.table2{
-    border: 1px solid #C2C6CE;
-    background-color: #264fa9 ;
+// .table2{
+//     border: 1px solid #C2C6CE;
+//     background-color: #264fa9 ;
+// }
+.form{
+    border: 1px solid #C2C6CE; 
+    padding: 0px;
 }
+.table{
+    color: #5C59E8;
+}
+.table2{
+    background-color: #FDF1E8;
+    color: #E46A11;
+}
+.tableProduct{
+    background-color: #C2C6CE;
+}
+.productList{
+    display: flex;
+    flex-direction: column;
+}
+

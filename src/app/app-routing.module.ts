@@ -7,10 +7,10 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 
 const routes: Routes = [
-  {path:"productList",component:ProductListComponent},
-  {path:"fillenProdat",component:FillenProdatComponent},
+  // {path:"productList",component:ProductListComponent},
+  // {path:"fillenProdat",component:FillenProdatComponent},
   {path:"productPage",component:ProductPageComponent},
-  {path:"sideBar",component:SideBarComponent},
+  // {path:"sideBar",component:SideBarComponent},
   // {path:'**',component:SideBarComponent}
 ];
 
