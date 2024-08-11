@@ -1,0 +1,43 @@
+$primary-color: #5C59E8;
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.inputLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.check-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Forgot{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: #5C59E8;
+    margin: 20px;
+    margin-top: 10px;
+}
+.bottomInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputBottom{
+    background-color: #5C59E8; 
+    width: 300px;
+}
+.forPassword{
+margin-bottom: 10px;
+}
+.form {
+    background-color:#F9F9FC;
+    // width: 150%;
+
+}

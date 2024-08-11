@@ -1,0 +1,70 @@
+$primary-color: #5C59E8;
+.nav-pills li a:hover{
+    background-color: #5C59E8;
+}
+// ----------------------------------------------------------------------------
+body{
+    background:  #FFFFFF;
+    border: 1px solid #C2C6CE
+}
+.text{
+    display: flex;
+    align-items: center;
+    // background-color: wheat;
+}
+.input{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding-bottom:0px;
+}
+.data{
+    display: flex;
+    align-items: center;  
+}
+.data .color{
+ color: #5C59E8
+}
+.product{
+    padding-bottom:0px; 
+}
+.button{
+    background-color: #5C59E8;
+}
+// .table2{
+//     border: 1px solid #C2C6CE;
+//     background-color: #264fa9 ;
+// }
+.form{
+    border: 1px solid #C2C6CE; 
+    padding: 0px;
+}
+.table{
+    color: #5C59E8;
+}
+.table2{
+    background-color: #FDF1E8;
+    color: #E46A11;
+}
+.tableProduct{
+    background-color: #C2C6CE;
+}
+.productList{
+    display: flex;
+    flex-direction: column;
+}
+.tableIcon{
+    background-color: #E7F4EE;
+    color: #0D894F;
+}
+.data5{
+    background-color: #F0F1F3;
+    color: #667085;
+}
+.data2{
+    background-color:#FEEDEC ;
+    color: #F04438;
+}
+.infrom{
+    background-color: #F9F9FC;
+}

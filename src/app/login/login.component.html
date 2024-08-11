@@ -1,0 +1,115 @@
+<div class="container py-5">
+    <div class="row">
+       <div class="col login">
+        <div class="">
+            <img src="../../assets/Logo.png" alt="">
+            <h2 class="py-3">Sign in to your  account</h2> 
+        </div>
+       </div>
+       <!-- <div class="col form-control w-75  inputLogin ">
+        <div class="">   
+            <label >E-mail</label>
+            <input type="email">
+            <label >Password</label>
+            <input type="password">
+        </div>
+       </div> -->
+    </div>
+</div>
+
+<!-- <div class="container">
+
+    <div class="row">
+        <div class="col-md-6  col-lg-12 inputLogin " >
+            <div class="w-25">
+                <div class=" mb-3  " >
+                   
+                    <h6> E-mail</h6>
+                    <input type="email" class="form-control form" id="floatingInput" placeholder="E-mail">
+                    <label for="floatingInput"></label>
+                  </div>
+                  <div class=" py-2">
+                     <h6>password</h6>
+                    <input type="password" class="form-control form " id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword"></label>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+ 
+  
+     <div class="container ">
+        <div class="row " > 
+            <div class="col-12   ">
+                <form [formGroup]="LoginForm" class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="mb-12 d-flex justify-content-center align-items-center  ">
+                                    <div class="col-lg-4  col-12 mx-auto">
+                                        <label for="E-mail" > E-mail</label>
+                                        <input formControlName="email" id="email" type="email" class="form-control form " placeholder="E-mail">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class= " col-mb-12 lg-12 d-flex justify-content-center align-items-center " >
+                        <div class="col-lg-4  col-12 mx-auto">
+                            <label for="password" class=""> password</label>
+                            <input formControlName="password" id="password" type="password" class="form-control form  " placeholder=" password" >
+                        </div>
+                        
+                    </div>
+                  
+                </form>
+
+            </div>
+
+        </div>
+
+     </div>
+   
+
+  
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12  check-input  ">
+            <div class="d-flex  py-3 ">
+                <div class="form-check  ">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Remember me
+                    </label>
+                    
+                  </div>
+                  <div class="Forgot ">
+                    <h6 class="forPassword">Forgot your password?</h6>
+                  </div>
+            </div>
+        </div>
+        <!-- <div class="col">
+            <div class=" ">
+               
+          
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                  
+            </div>
+        </div> -->
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class=" bottomInput">
+                <button type="submit" class="btn btn-primary btn-lg inputBottom">Sign in</button>
+            </div>
+        </div>
+    </div>
+
+</div>
