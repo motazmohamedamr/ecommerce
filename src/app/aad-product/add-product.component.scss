@@ -7,21 +7,19 @@
   
     
 }
-.titell{
+.dashboard{
     color: #5C59E8;
 }
-.catagory{
-    background-color: #FFFFFF;
-}
-.tito{
-    background-color: red;
-}
+// .backGround{
+//     background-color: #FFFFFF;
+// }
+
 .input{
     background-color: #F9F9FC;
 }
 .dag_drop{
-    width: 900px;
-    border: 4px  dotted  black;
+    width: 800px;
+    border: 5px  dotted  black;
     background-color: #F9F9FC;
     .file{
         opacity: 0;
@@ -37,7 +35,7 @@
     color: #5C59E8;
     text-align: center;
 }
-.button2{
+.saveButton{
  background-color: #5C59E8;
  color: white;
 }

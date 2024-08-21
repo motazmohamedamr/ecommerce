@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-aad-product',
-  templateUrl: './aad-product.component.html',
-  styleUrls: ['./aad-product.component.scss']
+  selector: 'app-add-product',
+  templateUrl: './add-product.component.html',
+  styleUrls: ['./add-product.component.scss']
 })
-export class AadProductComponent {
+export class AddProductComponent {
  file :any;
  getFile(event:any){
     this.file = event.target.files[0];
