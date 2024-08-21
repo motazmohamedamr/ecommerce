@@ -1,5 +1,6 @@
+
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,4 +12,16 @@ export class LoginComponent {
     email: new FormControl(''),
     password: new FormControl(''),
   })
+  user={
+    email:"",
+    password:""
+  }
+  loginUser(form:any)  {
+    //  console.warn(Item)
+    // debugger
+     console.log(form)
+    }
+
+
 }
+

@@ -11,6 +11,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FillenProdatComponent } from './fillen-prodat/fillen-prodat.component';
 import { LoginComponent } from './login/login.component';
  import { HttpClientModule } from '@angular/common/http';
+import { AadProductComponent } from './aad-product/aad-product.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ClientHomePageComponent } from './client-home-page/client-home-page.component';
+import { ClinentSignInComponent } from './clinent-sign-in/clinent-sign-in.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +23,12 @@ import { LoginComponent } from './login/login.component';
     ProductPageComponent,
      FillenProdatComponent ,
     SideBarComponent,
-    LoginComponent
+    LoginComponent,
+    AadProductComponent,
+    FooterComponent,
+    NavbarComponent,
+    ClientHomePageComponent,
+    ClinentSignInComponent
   ],
   imports: [
   

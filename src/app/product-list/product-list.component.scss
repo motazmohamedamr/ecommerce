@@ -20,13 +20,15 @@ body{
 }
 .data{
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    flex-shrink: 1; 
 }
 .data .color{
  color: #5C59E8
 }
 .product{
     padding-bottom:0px; 
+    flex-shrink: 0;
 }
 .button{
     background-color: #5C59E8;
@@ -68,3 +70,21 @@ body{
 .infrom{
     background-color: #F9F9FC;
 }
+.row{
+ flex-shrink: 1;
+//  margin-right: calc(-.5* var(--bs-gutter-x));
+--bs-gutter-x: 0rem;
+width: 80%;
+}
+
+
+table.table-fit {
+    width: auto !important;
+    table-layout: auto !important;
+  }
+  table.table-fit thead th,
+  table.table-fit tbody td,
+  table.table-fit tfoot th,
+  table.table-fit tfoot td {
+    width: auto !important;
+  }

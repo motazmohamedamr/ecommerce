@@ -1,0 +1,566 @@
+  <div class="col-lg-12    d-flex">
+    <div class="col-lg-2  ">
+        <app-side-bar></app-side-bar>   
+    </div>
+    <div class="container p-0 m-0 ">
+        <div class="row ">
+       <div class="col-lg-12  col-md-12">
+               <div class=" title" >
+                 <div class="d-flex py-4">
+                   <div>
+                     <h1>Add Product</h1>
+       
+                   </div> 
+                   </div>
+                  <div class="d-flex  align-items-center col-md-12 col-lg-12 col-sm-12  ">
+                       <h4 class=" titell">Dashboard  > product List</h4>
+                       
+                       <h4 class="">> Add Product </h4>
+                   </div> 
+               </div>
+       
+                   <!-- <div class="container-fluid p-0">
+                      
+                       <div class="row">
+                          <div class="col">
+                           <div class="xs-12 col-lg-9 px-4 ">
+                               <div class="catagory tito" > 
+                           <h2>General information</h2>
+                           <div>
+                           <label for="formGroupExampleInput" class="form-label">Product Name</label>
+                           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Type product name here...">
+                           </div>
+                           <div>
+                           <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type  product description here... "></textarea> 
+                           </div>
+                         </div>
+                  
+                         </div>
+                         
+                         
+               
+             
+                          </div>
+                          <div class="col-5 p-0">
+                           <div class="xs-12 col-lg-3 p-1  catagory bg-info">
+                               <h2>category</h2>
+                               <p>Product Category</p>         
+                               <select class="form-select  " aria-label="Default select example">
+                                   <option selected>select a category </option>
+                                   <option value="1">One</option>
+                                   <option value="2">Two</option>
+                                   <option value="3">Three</option>
+                                 </select>
+           
+                                 
+                             </div> 
+                          </div>
+                       </div>
+                       
+                     
+                   </div> -->
+                   
+                       <div class="row  ">
+                           <!-- <form >
+                               <div class="col-9  catagory">
+                                   <div class="p-1 catagory">
+                                       <h2>General information</h2>
+                                       <div>
+                                       <label for="formGroupExampleInput" class="form-label">Product Name</label>
+                                       <input type="text" class="form-control input" id="formGroupExampleInput" placeholder="Type product name here...">
+                                       </div>         
+                                     
+                                   </div>
+                                 </div> 
+                                 <div class="col-9  catagory">
+                                   <div class="p-2 ">
+                                       <div>
+                                           <label for="exampleFormControlTextarea1" class="form-label ">Description</label>
+                                           <textarea class="form-control input" id="exampleFormControlTextarea1" rows="3" placeholder="Type  product description here... "></textarea> 
+                                           </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-2 d-flex align-content-center justify-content-center">
+                                   <div class="p-3 catagory " > 
+               
+                                       <div class=" catagory d-flex align-content-center justify-content-center ">
+                                           <div class="">
+                                           <h2>category</h2>
+                                           <p>Product Category</p>         
+                                           <select class="form-select input " aria-label="Default select example">
+                                               <option selected>select a category </option>
+                                               <option value="1">One</option>
+                                               <option value="2">Two</option>
+                                               <option value="3">Three</option>
+                                             </select>
+                       
+                                           </div>
+                                         </div> 
+               
+                                    </div>
+                                 </div>
+                           </form> -->
+                           
+                               <div class="row p-1">
+                                   <form [formGroup]="generalInformation">
+                                       <div class="row pt-2 px-3 catagory ">
+       
+                                           <div class="col-lg-8  col-md-12  ">
+                                               <div class="  p-2">
+                                                   <h3>General  Information </h3>
+                                                   <div class="mb-3">
+                                                       <div>
+                                                           <label for="formGroupExampleInput" class="form-label">Product Name</label>
+                                                           <input  formControlName="productName" type="text" class="form-control input" id="formGroupExampleInput" placeholder="Type product name here...">
+                                                           <div class="alert alert-danger" *ngIf="generalInformation.get('productName')?.errors && generalInformation.get('productName')?.touched">
+                                                               <p *ngIf="generalInformation.get('productName')?.getError('required')">Name is Required</p>
+                                                               <p *ngIf="generalInformation.get('productName')?.getError('minlength')">Name min Length 5</p>
+                                                               <p *ngIf="generalInformation.get('productName')?.getError('maxlength')">Name max Length 20</p>
+                   
+                                                           </div>
+                                                           </div> 
+                               
+                                                   </div>
+                                                   <div class="mb-3">
+                                                       <div>
+                                                           <label for="exampleFormControlTextarea1" class="form-label ">Description</label>
+                                                           <textarea formControlName="description" class="form-control input" id="exampleFormControlTextarea1" rows="3" placeholder="Type  product description here... "></textarea> 
+                                                           </div>
+                                                           <div class="alert alert-danger" *ngIf="generalInformation.get('description')?.errors && generalInformation.get('description')?.touched">
+                                                               <p *ngIf="generalInformation.get('description')?.getError('required')">Name is Required</p>
+                                                               <p *ngIf="generalInformation.get('description')?.getError('minlength')">Name min Length 5</p>
+                                                               <p *ngIf="generalInformation.get('description')?.getError('maxlength')">Name max Length 20</p>
+                   
+                                                           </div>
+                                                   </div>
+                               
+                                               </div>
+                                               
+                                           </div>
+                                           <div class="col-lg-4 col-md-12">
+                                               <div class="  ">
+                                                   <div class=" bg-body-secondary ">
+                                                       <div class="card" style="width: 16rem;">
+                                                           <div class="card-body">
+                                                               <h5 class="card-title">Card title</h5>
+                                           <span>product Category</span>
+                                           <div class="dropdown">
+                                               <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Dropdown button
+                                               </button>
+                                               <ul class="dropdown-menu">
+                                                 <li><a class="dropdown-item" href="#">Action</a></li>
+                                                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                               </ul>
+                                             </div>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="pt-4  ">
+                                                   <div class="col-6 bg-body-secondary ">
+                                                       <div class="card" style="width: 16rem;">
+                                                           <div class="card-body">
+                                                               <div class="d-flex  align-items-center justify-content-between ">
+                                           
+                                                                   <h5 class="card-title">Status</h5><span class="badge rounded-pill  text-bg-secondary">Draft</span>
+                                                               </div>
+                                           <span>product Category</span>
+                                           <div class="dropdown">
+                                               <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Dropdown button
+                                               </button>
+                                               <ul class="dropdown-menu">
+                                                 <li><a class="dropdown-item" href="#">Action</a></li>
+                                                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                               </ul>
+                                             </div>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                               
+                                           </div>
+                                       </div>
+                                        
+                                      <!-- <div class="d-flex align-content-center ">
+                                       <div class="col-9  catagory">
+                                           <div class="p-1 catagory">
+                                               <p>{{generalInformation.get('productName')?.getError('minlength') | json}}</p>
+                                               <h2>General information</h2>
+                                               <div>
+                                               <label for="formGroupExampleInput" class="form-label">Product Name</label>
+                                               <input  formControlName="productName" type="text" class="form-control input" id="formGroupExampleInput" placeholder="Type product name here...">
+                                               <div class="alert alert-danger" *ngIf="generalInformation.get('productName')?.errors && generalInformation.get('productName')?.touched">
+                                                   <p *ngIf="generalInformation.get('productName')?.getError('required')">Name is Required</p>
+                                                   <p *ngIf="generalInformation.get('productName')?.getError('minlength')">Name min Length 5</p>
+                                                   <p *ngIf="generalInformation.get('productName')?.getError('maxlength')">Name max Length 20</p>
+       
+                                               </div>
+                                               </div>         
+                                             
+                                           </div>
+                                         </div>
+                                         <div class="col-2  p-3">
+                                           <div class=" catagory " > 
+                       
+                                               <div class=" catagory  ">
+                                                   <h2>category</h2>
+                                                   <p>Product Category</p>         
+                                                   <select formControlName="productCategory" class="form-select input " aria-label="Default select example">
+                                                       <option selected>select a category </option>
+                                                       <option value="1">One</option>
+                                                       <option value="2">Two</option>
+                                                       <option value="3">Three</option>
+                                                     </select>
+                               
+                                                     
+                                                 </div> 
+                       
+                                            </div>
+                                         </div>
+                                         
+                                     
+       
+                                       </div>
+                                       <div class="d-flex align-content-center ">
+                                           <div class="col-9  catagory">
+                                               <div class="p-2 ">
+                                                   <div>
+                                                       <label for="exampleFormControlTextarea1" class="form-label ">Description</label>
+                                                       <textarea formControlName="description" class="form-control input" id="exampleFormControlTextarea1" rows="3" placeholder="Type  product description here... "></textarea> 
+                                                       </div>
+                                                       <div class="alert alert-danger" *ngIf="generalInformation.get('description')?.errors && generalInformation.get('description')?.touched">
+                                                           <p *ngIf="generalInformation.get('description')?.getError('required')">Name is Required</p>
+                                                           <p *ngIf="generalInformation.get('description')?.getError('minlength')">Name min Length 5</p>
+                                                           <p *ngIf="generalInformation.get('description')?.getError('maxlength')">Name max Length 20</p>
+               
+                                                       </div>
+       
+                                               </div>
+       
+                                             </div>
+                                             <div class="col-2 p-3">
+                                               <div class="p-2 catagory" >
+                                                   <div class="  catagory ">
+                                                       <h2> Status</h2>
+                                                       <p>Product Status</p>         
+                                                       <select class="form-select input  " aria-label="Default select example">
+                                                           <option selected>Draft </option>
+                                                           <option value="1">One</option>
+                                                           <option value="2">Two</option>
+                                                           <option value="3">Three</option>
+                                                         </select>
+                                   
+                                                         
+                                                     </div> 
+                                                  
+                                               </div>
+                                          
+                                             </div>
+                                       </div> -->
+                                   </form> 
+                                </div>
+       
+                    
+                       <div class="row">
+                           <div class="col-lg-12 col-md-12 catagory">
+                               <div>
+                                   <h4>media</h4>
+                               </div>
+                               <div>
+                                   <form >
+                                   <p>photo </p>
+                                   <div class="row">
+                                       <div class="col-6 dag_drop">
+                                           <div class="text-center">
+                                               <svg class="text-center"  width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M6.33325 9.25016C7.29975 9.25016 8.08325 8.46666 8.08325 7.50016C8.08325 6.53366 7.29975 5.75016 6.33325 5.75016C5.36675 5.75016 4.58325 6.53366 4.58325 7.50016C4.58325 8.46666 5.36675 9.25016 6.33325 9.25016Z" fill="#5C59E8"/>
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70825 0.208496C1.77525 0.208496 0.208252 1.7755 0.208252 3.7085V18.2918C0.208252 20.2248 1.77526 21.7918 3.70825 21.7918H18.2916C20.2246 21.7918 21.7916 20.2248 21.7916 18.2918V3.7085C21.7916 1.7755 20.2246 0.208496 18.2916 0.208496H3.70825ZM18.2916 2.54183H3.70825C3.06392 2.54183 2.54159 3.06416 2.54159 3.7085V12.7713L5.45682 10.9773C5.65082 10.858 5.89658 10.8624 6.08612 10.9888L9.19744 13.063L14.1418 9.21737C14.3525 9.05353 14.6474 9.05353 14.8581 9.21737L19.4583 12.7953V3.7085C19.4583 3.06416 18.9359 2.54183 18.2916 2.54183ZM2.54159 18.2918V15.5111L5.72477 13.5522L9.30246 15.9373L14.5 11.8948L19.4583 15.7513V18.2918C19.4583 18.9362 18.9359 19.4585 18.2916 19.4585H3.70825C3.06392 19.4585 2.54159 18.9362 2.54159 18.2918Z" fill="#5C59E8"/>
+                                                   </svg>
+                                                
+                                            </div>
+                                           
+                                            <p class="text-center">Drag and drop image here, or click add image</p> 
+                                            <button type="button" class="btn  button text-center">Add image</button>  
+                                            
+                                       <input formControlName="productImage"  type="file" (change)=" getFile($event)" class="file  input">
+                                       </div>
+                                   </div>
+                                   <!-- <div class="dag_drop"> -->
+                                       <!-- <div class="text-center py-5" > -->
+                                           <!-- <svg class=""  width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                               <path d="M6.33325 9.25016C7.29975 9.25016 8.08325 8.46666 8.08325 7.50016C8.08325 6.53366 7.29975 5.75016 6.33325 5.75016C5.36675 5.75016 4.58325 6.53366 4.58325 7.50016C4.58325 8.46666 5.36675 9.25016 6.33325 9.25016Z" fill="#5C59E8"/>
+                                               <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70825 0.208496C1.77525 0.208496 0.208252 1.7755 0.208252 3.7085V18.2918C0.208252 20.2248 1.77526 21.7918 3.70825 21.7918H18.2916C20.2246 21.7918 21.7916 20.2248 21.7916 18.2918V3.7085C21.7916 1.7755 20.2246 0.208496 18.2916 0.208496H3.70825ZM18.2916 2.54183H3.70825C3.06392 2.54183 2.54159 3.06416 2.54159 3.7085V12.7713L5.45682 10.9773C5.65082 10.858 5.89658 10.8624 6.08612 10.9888L9.19744 13.063L14.1418 9.21737C14.3525 9.05353 14.6474 9.05353 14.8581 9.21737L19.4583 12.7953V3.7085C19.4583 3.06416 18.9359 2.54183 18.2916 2.54183ZM2.54159 18.2918V15.5111L5.72477 13.5522L9.30246 15.9373L14.5 11.8948L19.4583 15.7513V18.2918C19.4583 18.9362 18.9359 19.4585 18.2916 19.4585H3.70825C3.06392 19.4585 2.54159 18.9362 2.54159 18.2918Z" fill="#5C59E8"/>
+                                               </svg>
+                                               <p>Drag and drop image here, or click add image</p> -->
+                                               <!-- <button type="button" class="btn  button">Add image</button> -->
+                                               <!-- <input type="file" (change)=" getFile($event)" class="file  input"> -->
+                                       <!-- </div> -->
+       
+       
+                                        <!-- <div class="text-center">
+                                           <svg class="text-center"  width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                               <path d="M6.33325 9.25016C7.29975 9.25016 8.08325 8.46666 8.08325 7.50016C8.08325 6.53366 7.29975 5.75016 6.33325 5.75016C5.36675 5.75016 4.58325 6.53366 4.58325 7.50016C4.58325 8.46666 5.36675 9.25016 6.33325 9.25016Z" fill="#5C59E8"/>
+                                               <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70825 0.208496C1.77525 0.208496 0.208252 1.7755 0.208252 3.7085V18.2918C0.208252 20.2248 1.77526 21.7918 3.70825 21.7918H18.2916C20.2246 21.7918 21.7916 20.2248 21.7916 18.2918V3.7085C21.7916 1.7755 20.2246 0.208496 18.2916 0.208496H3.70825ZM18.2916 2.54183H3.70825C3.06392 2.54183 2.54159 3.06416 2.54159 3.7085V12.7713L5.45682 10.9773C5.65082 10.858 5.89658 10.8624 6.08612 10.9888L9.19744 13.063L14.1418 9.21737C14.3525 9.05353 14.6474 9.05353 14.8581 9.21737L19.4583 12.7953V3.7085C19.4583 3.06416 18.9359 2.54183 18.2916 2.54183ZM2.54159 18.2918V15.5111L5.72477 13.5522L9.30246 15.9373L14.5 11.8948L19.4583 15.7513V18.2918C19.4583 18.9362 18.9359 19.4585 18.2916 19.4585H3.70825C3.06392 19.4585 2.54159 18.9362 2.54159 18.2918Z" fill="#5C59E8"/>
+                                               </svg>
+                                            
+                                        </div>
+                                       
+                                        <p class="text-center">Drag and drop image here, or click add image</p> 
+                                        <button type="button" class="btn  button text-center">Add image</button>  
+                                        
+                                   <input formControlName="productImage"  type="file" (change)=" getFile($event)" class="file  input"> -->
+                                   <!-- </div> -->
+                               </form>
+                               </div>
+                           </div>
+                       </div>
+                    
+                     <div class="row py-4">  
+                       <form class="g-3 py-2 catagory" [formGroup]="generalInformation ">
+                           <div>
+                               <h3>Pricing</h3>
+                            </div>
+                           <div class="col-lg-12 col-md-12">
+                               <label for="inputAddress" class="form-label">Base Price</label>
+                               <input formControlName="base" type="text" class="form-control input" id="inputAddress" placeholder="$ Type base price here...">
+                               <div class="alert alert-danger" *ngIf="generalInformation.get('base')?.errors && generalInformation.get('base')?.touched">
+                                   <p *ngIf="generalInformation.get('base')?.getError('required')">Name is Required</p>
+                                   <p *ngIf="generalInformation.get('base')?.getError('minlength')">Name min Length 5</p>
+                                   <p *ngIf="generalInformation.get('base')?.getError('maxlength')">Name max Length 20</p>
+       
+                               </div> 
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-6 col-md-12">
+                                   <label for="inputState" class="form-label">Discount Type</label>
+                               <select formControlName="discountType" id="inputState" class="form-select input">
+                                 <option selected>Select a discount type</option>
+                                 <option>...</option>
+                               </select>
+                               </div>
+                               <div class="col-lg-6 col-md-12">
+                                   <label for="inputAddress2" class="form-label">Discount Precentage (%)</label>
+                                   <input formControlName="discount" type="text" class="form-control input" id="inputAddress2" placeholder="Type discount  Precentage...">
+                                   <div class="alert alert-danger" *ngIf="generalInformation.get('discount')?.errors && generalInformation.get('discount')?.touched">
+                                     <p *ngIf="generalInformation.get('discount')?.getError('required')">Name is Required</p>
+                                     <p *ngIf="generalInformation.get('discount')?.getError('minlength')">Name min Length 5</p>
+                                     <p *ngIf="generalInformation.get('discount')?.getError('maxlength')">Name max Length 20</p>
+             
+                                 </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-6 col-md-12">
+                                   <label for="inputState" class="form-label">Tax Class</label>
+                                   <select formControlName="taxClass" id="inputState" class="form-select input">
+                                     <option selected> Select a tax class</option>
+                                     <option>...</option>
+                                   </select>
+                               </div>
+                               <div class="col-lg-6 col-md-12">
+                                   <label for="inputCity" class="form-label">VAT Amount (%)</label>
+                                   <input formControlName="amount" type="text" class="form-control input" id="inputCity" placeholder="Type VAT amount...">
+                                   <div class="alert alert-danger" *ngIf="generalInformation.get('amount')?.errors && generalInformation.get('amount')?.touched">
+                                     <p *ngIf="generalInformation.get('amount')?.getError('required')">Name is Required</p>
+                                     <p *ngIf="generalInformation.get('amount')?.getError('minlength')">Name min Length 5</p>
+                                     <p *ngIf="generalInformation.get('amount')?.getError('maxlength')">Name max Length 20</p>
+             
+                                 </div>
+                               </div>
+                           </div>
+       
+                            <!-- <div>
+                               <h3>Pricing</h3>
+                            </div>
+                           <div class="col-9">
+                               <label for="inputAddress" class="form-label">Base Price</label>
+                               <input formControlName="base" type="text" class="form-control input" id="inputAddress" placeholder="$ Type base price here...">
+                               <div class="alert alert-danger" *ngIf="pricing.get('base')?.errors && pricing.get('base')?.touched">
+                                   <p *ngIf="pricing.get('base')?.getError('required')">Name is Required</p>
+                                   <p *ngIf="pricing.get('base')?.getError('minlength')">Name min Length 5</p>
+                                   <p *ngIf="pricing.get('base')?.getError('maxlength')">Name max Length 20</p>
+       
+                               </div>
+                             </div>
+                             <div class="col-md-4">
+                               <label for="inputState" class="form-label">Discount Type</label>
+                               <select formControlName="discountType" id="inputState" class="form-select input">
+                                 <option selected>Select a discount type</option>
+                                 <option>...</option>
+                               </select>
+                             </div>
+                           <div class="col-5">
+                             <label for="inputAddress2" class="form-label">Discount Precentage (%)</label>
+                             <input formControlName="discount" type="text" class="form-control input" id="inputAddress2" placeholder="Type discount  Precentage...">
+                             <div class="alert alert-danger" *ngIf="pricing.get('discount')?.errors && pricing.get('discount')?.touched">
+                               <p *ngIf="pricing.get('discount')?.getError('required')">Name is Required</p>
+                               <p *ngIf="pricing.get('discount')?.getError('minlength')">Name min Length 5</p>
+                               <p *ngIf="pricing.get('discount')?.getError('maxlength')">Name max Length 20</p>
+       
+                           </div>
+                           </div>
+                           <div class="col-md-4">
+                               <label for="inputState" class="form-label">Tax Class</label>
+                               <select formControlName="taxClass" id="inputState" class="form-select input">
+                                 <option selected> Select a tax class</option>
+                                 <option>...</option>
+                               </select>
+                             </div>
+                           <div class="col-md-5">
+                             <label for="inputCity" class="form-label">VAT Amount (%)</label>
+                             <input formControlName="amount" type="text" class="form-control input" id="inputCity" placeholder="Type VAT amount...">
+                             <div class="alert alert-danger" *ngIf="pricing.get('amount')?.errors && pricing.get('amount')?.touched">
+                               <p *ngIf="pricing.get('amount')?.getError('required')">Name is Required</p>
+                               <p *ngIf="pricing.get('amount')?.getError('minlength')">Name min Length 5</p>
+                               <p *ngIf="pricing.get('amount')?.getError('maxlength')">Name max Length 20</p>
+       
+                           </div>
+                           </div> -->
+                          
+                       
+                         
+                         </form>
+                     </div>
+                     
+                       <form class=" g-3" [formGroup]="generalInformation " >
+                             <div class="row catagory">
+                               <div>
+                                   <h5>Inventory</h5>
+                               </div>
+                               <div class="col-6 py-3">
+                                   <label for="inputTeext" >SKU</label>
+                             <input formControlName=" product " type="text" class="form-control input" id="inputTeext" placeholder="Type product SKU here...">
+                             <div class="alert alert-danger" *ngIf="generalInformation.get('product')?.errors && generalInformation.get('product')?.touched">
+                               <p *ngIf="generalInformation.get('product')?.getError('required')">Name is Required</p>
+                               <p *ngIf="generalInformation.get('product')?.getError('minlength')">Name min Length 5</p>
+                               <p *ngIf="generalInformation.get('product')?.getError('maxlength')">Name max Length 20</p>
+       
+                           </div>
+                               </div>
+                               <div class="col-6 py-3">
+                                   <label for="inputText" >Quantity</label>
+                                   <input formControlName=" quantity" type="text" class="form-control input" id="inputText" placeholder="Type product quantity here...">
+                               </div>
+                             </div>
+                           
+                           <!-- <div class="col-md-4">
+                             <label for="inputTeext" >SKU</label>
+                             <input formControlName=" product " type="text" class="form-control input" id="inputTeext" placeholder="Type product SKU here...">
+                             <div class="alert alert-danger" *ngIf="inventory.get('product')?.errors && inventory.get('product')?.touched">
+                               <p *ngIf="inventory.get('product')?.getError('required')">Name is Required</p>
+                               <p *ngIf="inventory.get('product')?.getError('minlength')">Name min Length 5</p>
+                               <p *ngIf="inventory.get('product')?.getError('maxlength')">Name max Length 20</p>
+       
+                           </div>
+                           </div>
+                           <div class="col-md-5">
+                             <label for="inputText" >Quantity</label>
+                             <input formControlName=" quantity" type="text" class="form-control input" id="inputText" placeholder="Type product quantity here...">
+                           </div> -->
+                       
+       
+                          
+                          
+                       </form>
+                  
+                     <!--  -->
+                  
+                       <div class="row catagory">
+                           <h2>Shiping</h2>
+                           <div class="col-12 py-3" >
+                               <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                               <label class="form-check-label" for="autoSizingCheck">
+                                 This is a physical product
+                               </label>
+                           </div>
+                         </div>
+       
+                       <!-- <div>
+                            <h2>Shiping</h2>
+       
+                           <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                           <label class="form-check-label" for="autoSizingCheck">
+                             This is a physical product
+                           </label>
+                       </div> -->
+                       <form class="row g-3" >
+                           <div class="row" [formGroup]="generalInformation ">
+                               <div class="col-lg-3 col-md-12">
+                                   <label for="hahah" class="form-label">Weight</label>
+                                   <input formControlName="weight" type="text" class="form-control input" id="hahah" placeholder="Product Weight...">
+                                   <!-- <div class="alert alert-danger" *ngIf="shp.get('weight')?.errors && inventory.get('weight')?.touched">
+                                     <p *ngIf="shp.get('weight')?.getError('required')">Name is Required</p>
+                                     <p *ngIf="shp.get('weight')?.getError('minlength')">Name min Length 5</p>
+                                     <p *ngIf="shp.get('weight')?.getError('maxlength')">Name max Length 20</p>
+             
+                                 </div>  -->
+                               </div>
+                               <div class="col-lg-3 col-md-12">
+                                   <label for="form-app" class="form-label">Heigh</label>
+                                   <input formControlName="height" type="text" class="form-control input" id="form-app" placeholder="Height (cm)....">
+                               </div>
+                               <div class="col-lg-3 col-md-12 ">
+                                   <label for="inputAddress5" class="form-label">Length</label>
+                                   <input formControlName="length"  type="text" class="form-control input" id="inputAddress5" placeholder="Length (cm)...">
+                               </div>
+                               <div class="col-lg-3 col-md-12">
+                                   <label for="inputAddress10" class="form-label">width</label>
+                                   <input formControlName="width" type="text" class="form-control input" id="inputAddress10" placeholder="Width (cm)...">
+                               </div>
+                           </div>
+       
+                           <!-- <div class="col-md-2">
+                             <label for="hahah" class="form-label">Weight</label>
+                             <input formControlName="weight" type="text" class="form-control input" id="hahah" placeholder="Product Weight...">
+                             <div class="alert alert-danger" *ngIf="shp.get('weight')?.errors && inventory.get('weight')?.touched">
+                               <p *ngIf="shp.get('weight')?.getError('required')">Name is Required</p>
+                               <p *ngIf="shp.get('weight')?.getError('minlength')">Name min Length 5</p>
+                               <p *ngIf="shp.get('weight')?.getError('maxlength')">Name max Length 20</p>
+       
+                           </div>
+                           </div>
+                           <div class="col-md-2">
+                             <label for="form-app" class="form-label">Heigh</label>
+                             <input formControlName="height" type="text" class="form-control input" id="form-app" placeholder="Height (cm)....">
+                           </div>
+                           <div class="col-3">
+                             <label for="inputAddress5" class="form-label">Length</label>
+                             <input formControlName="length"  type="text" class="form-control input" id="inputAddress5" placeholder="Length (cm)...">
+                           </div>
+                           <div class="col-2">
+                             <label for="inputAddress10" class="form-label">width</label>
+                             <input formControlName="width" type="text" class="form-control input" id="inputAddress10" placeholder="Width (cm)...">
+                           </div> -->
+                           
+                         </form>
+                     
+                    
+                       <div class="row catagory">
+                           <div class="col-6">
+                               <div class="d-flex  align-items-center py-3">
+                                   <h4 class="p-4">Product Completion </h4>
+                                   <p class="Placeholders m-0">0%</p>
+                                  
+                           </div>
+                            </div>
+       
+                               <div class="col-6 py-5">
+                               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                   <button class="btn btn-light" type="button">x  cancel</button>
+                                   <button class="btn btn- button2" type="button">save</button>
+                                 </div>
+                               </div>
+       
+                       </div>
+             </div>
+       </div>
+       </div>
+  </div>
+
+ 
+
