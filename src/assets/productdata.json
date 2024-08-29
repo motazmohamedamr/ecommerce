@@ -1,0 +1,63 @@
+[
+
+{
+   "name": "Gradient Graphic T-shirt",
+    "price": "$145",
+    "imgPath":"./assets/b094f9a20c2328f54a31b153619784f3.png",
+    "description": "This polo shirt has a gradient graphic detail in the front and back. It has a tipping detail on the right side and a tucked detail on the left side.",
+    "type": "Polo Shirt",
+   " amount": 100,
+    "isDeleted": false,
+    "createdOn": "2023-7-10",
+    "updatedOn":"2023-5-5",
+   " onSale":false,
+   "token" : "login123",
+   "productId":1234558
+  },
+
+  {
+    "name": "Polo with Tipping Details",
+    "price": "$180",
+    "imgPath":"./assets/485b30fd30b3226e09bb8f8e494c260b.png",
+    "description": "This polo shirt has a gradient graphic detail in the front and back. It has a tipping detail on the right side and a tucked detail on the left side.",
+    "type": "Polo Shirt",
+    "amount": 100,
+    "isDeleted": false,
+    "createdOn": "2022-2-22",
+    "updatedOn":"2022-1-5",
+    "onSale":false,
+    "token" : "login123",
+    "productId":1236968
+
+  },
+  {
+    "name": "Black Striped T-shirt",
+    "price": "$130",
+    "imgPath":"./assets/12942762aefb7c7ac954e78b76284504.png",
+    "description": "This polo shirt has a gradient graphic detail in the front and back. It has a tipping detail on the right side and a tucked detail on the left side.",
+    "type": "Polo Shirt",
+    "amount": 100,
+    "isDeleted": false,
+    "createdOn": "2023-2-10",
+    "updatedOn":"2023-12-5",
+    "onSale":true,
+    "token" : "login123",
+    "productId":123498987
+  },
+  {
+    "name": "Polo with Tipping Details",
+    "price": "$180",
+    "imgPath":"./assets/485b30fd30b3226e09bb8f8e494c260b.png",
+    "description": "This polo shirt has a gradient graphic detail in the front and back. It has a tipping detail on the right side and a tucked detail on the left side.",
+    "type": "Polo Shirt",
+    "amount": 100,
+    "isDeleted": false,
+    "createdOn": "2022-2-22",
+    "updatedOn":"2022-1-5",
+    "onSale":false,
+    "token" : "login123",
+    "productId":123864984
+
+  }
+
+]

@@ -7,12 +7,20 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FillenProdatComponent } from './fillen-prodat/fillen-prodat.component';
-import { LoginComponent } from './login/login.component'; import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component'; 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ClientHomePageComponent } from './client-home-page/client-home-page.component';
 import { ClinentSignInComponent } from './clinent-sign-in/clinent-sign-in.component';
 import { AddProductComponent } from './aad-product/add-product.component';
+import { HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
+import { ClientCartComponent } from './client-cart/client-cart.component';
+import { LoadingService } from 'src/assets/services/loding.service';
+import { httpLoadingInterceptor } from './my-http.interceptor';
+import { LoadingComponentComponent } from './loading-component/loading-component.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +33,10 @@ import { AddProductComponent } from './aad-product/add-product.component';
     NavbarComponent,
     ClientHomePageComponent,
     ClinentSignInComponent,
-    AddProductComponent
+    AddProductComponent,
+    DetailsComponent,
+    ClientCartComponent,
+    LoadingComponentComponent
     
   ],
 
@@ -38,7 +49,8 @@ import { AddProductComponent } from './aad-product/add-product.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [provideHttpClient(withInterceptors([httpLoadingInterceptor])),
+  LoadingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

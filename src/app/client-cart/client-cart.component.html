@@ -1,0 +1,131 @@
+<app-navbar></app-navbar>
+<div class="d-flex px-5">
+    <h5>Home ></h5>
+    <h5> Cart</h5>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="">
+        <h2>Your cart</h2>
+    </div>
+     <div class="col-lg-6 " *ngFor="let product of products  " >
+            <div class="card col-lg-12  " >
+                <img [src]="product.imgPath" class="" alt="...">
+            <div class="card-body">
+              <h5>{{product.name}}</h5>
+              <p>Size: Large</p>
+              <p>Color: White</p>
+              <h5>{{product.price}}</h5>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <div class="d-flex btn btn-secondary">
+                 
+                  <div class="px-2">
+                    <i class="fa-solid fa-minus px-2 " (click)="decrement()">
+                      
+                    </i >
+
+                  </div>
+                  {{counterValue}}
+                  <div>
+                    <i class="fa-solid fa-plus px-2"(click)=" increment()">
+                          
+                    </i>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <hr>
+            </div>
+            <div class="card col-lg-12 py-2" >
+                <img src="assets/5fc84f87eeac1062fbe47f49c192d4f2.png" class="" alt="...">
+            <div class="card-body">
+              <h5>Gradient Graphic T-shirt</h5>
+              <p>Size: Large</p>
+              <p>Color: White</p>
+              <h5>$145</h5>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <div class="d-flex btn btn-secondary">
+                 
+                  <div class="px-2">
+                    <i class="fa-solid fa-minus px-2 " (click)="decrement()">
+                      
+                    </i >
+
+                  </div>
+                  {{counterValue}}
+                  <div>
+                    <i class="fa-solid fa-plus px-2"(click)=" increment()">
+                          
+                    </i>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <hr>
+            </div>
+            <div class="card col-lg-12 py-2 " >
+                <img src="assets/ff941dde9bc0e54431b8d8fe3182f5e9.png" class="" alt="...">
+            <div class="card-body">
+              <h5>Gradient Graphic T-shirt</h5>
+              <p>Size: Large</p>
+              <p>Color: White</p>
+              <h5>$145</h5>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <div class="d-flex btn btn-secondary">
+                 
+                  <div class="px-2">
+                    <i class="fa-solid fa-minus px-2 " (click)="decrement()">
+                      
+                    </i >
+
+                  </div>
+                  {{counterValue}}
+                  <div>
+                    <i class="fa-solid fa-plus px-2"(click)=" increment()">
+                          
+                    </i>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <hr>
+            </div>
+         </div>
+  <div class="col-lg-6 py-2 ">
+    <div class="card" >
+        <div class="card-body">
+          <h5 class="card-title">Order Summary</h5>
+          <div class="d-flex justify-content-between">
+            <h5>Subtotal</h5>
+            <p>$145</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h5>Discount (-20%)</h5>
+            <p>-$113</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h5>Delivery Fee</h5>
+            <p>$15</p>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <h5>Total</h5>
+            <p>$467</p>
+          </div>
+
+          <div class="d-flex  justify-content-md-end">
+           <input type="text" class="rounded-5  w-100" placeholder="Add promo code" aria-label="First name">
+           <button class="btn btn-dark me-md-2 " type="button">Apply</button>
+          </div>
+          <div class="d-grid gap-2 col-12 mx-auto py-3">
+            <button class="btn btn-dark" type="button">Go to Checkout</button>
+            
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+
+<app-footer></app-footer>
+

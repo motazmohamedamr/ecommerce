@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';import { NavbarComponen
 import { ClientHomePageComponent } from './client-home-page/client-home-page.component';
 import { ClinentSignInComponent } from './clinent-sign-in/clinent-sign-in.component';
 import { AddProductComponent } from './aad-product/add-product.component';
+import { DetailsComponent } from './details/details.component';
+import { ClientCartComponent } from './client-cart/client-cart.component';
 
 const routes: Routes = [
   {path:"productPage",component:ProductPageComponent},
@@ -14,7 +16,10 @@ const routes: Routes = [
   {path:"add-product",component:AddProductComponent, },
   {path:'navbar',component:NavbarComponent},
   {path:'client', component:ClientHomePageComponent},
-  {path:'sign-in', component:ClinentSignInComponent}
+  {path:'sign-in', component:ClinentSignInComponent},
+  {path:"details/:id",component:DetailsComponent},
+  {path:"cart",component: ClientCartComponent}
+  
 ];
 
 AddProductComponent

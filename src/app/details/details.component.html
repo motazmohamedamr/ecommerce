@@ -1,0 +1,212 @@
+<link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<app-navbar></app-navbar>
+  
+<div class="px-3">
+    <div class="d-flex">
+      <h5>Home ></h5>  
+      <h5>Shop ></h5>
+      <h5>Men ></h5>
+      <h5>T-Shirts </h5>
+    </div>
+</div>
+ 
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 d-none d-sm-inline">
+        <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
+        <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
+        <div class="col-lg-3"><img [src]=" this.product?.imgPath" alt="t-shirt" class="w-100"></div>
+        </div>
+        <div class="col-lg-4 ">
+          
+          <img [src]="this.product?.imgPath" alt="" class="w-100">
+
+        </div>
+        <div class="col-lg-3 d-flex  d-lg-none">
+          <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
+          <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
+          <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
+          </div>
+
+          <div class="col-lg-6 ">
+            <div>
+              <h2>{{this.product?.name}}</h2>
+              <ul class="d-flex list-unstyled star1">
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+            </ul>
+            <div class="d-flex" >
+              <h4 class="px-1 ">{{this.product?.price}}</h4>
+              <h4 class="px-1 pries text-decoration-line-through">$160</h4>
+             <span class="badge text-bg-danger">-30%</span>
+             </div>
+             <p>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+             <hr class="mb-lg-5">
+
+             <div class="pt-lg-5">
+              <div class="d-flex  ">
+                <button class="btn btn-dark col-lg-3 " type="button">+ 1 -</button>
+                <button class="btn btn-dark col-lg-7 px-5" (click)="StoreProduct()" [routerLink]="'/cart'"   type="button">Add to Cart</button>
+               </div>
+             </div>
+
+
+            </div>
+
+          </div>
+          <div class="text-center">
+            <h2>You might also like</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 py-2 " >
+            <div class="card "  routerLink="/details" >
+                <img src="assets/3095df99e905b164718348af952a0f64.png" alt="t-shirt">
+                <div class="card-body ">
+                    <h5 class="card-star1">Polo with Contrast Trims</h5>
+                    <div class="">
+                        <ul class="d-flex list-unstyled star1">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                       </div>
+                       <div class="d-flex">
+                        <h4>$212</h4>
+                        <div class="d-flex" >
+                            <h4 class="px-1 pries text-decoration-line-through">$160</h4>
+                           <span class="badge text-bg-danger">-30%</span>
+                           </div>
+                       </div>
+
+                </div>
+              </div>
+         </div>
+          <div class="col-lg-3 col-md-6 col-6 py-2 " >
+            <div class="card "  routerLink="/details" >
+                <img src="assets/b094f9a20c2328f54a31b153619784f3.png" alt="t-shirt" class="w-100">
+                <div class="card-body ">
+                    <h5 class="card-star1">Polo with Contrast Trims</h5>
+                    <div class="">
+                        <ul class="d-flex list-unstyled star1">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                       </div>
+                     
+                        <h4>$212</h4>
+                        
+                      
+
+                </div>
+              </div>
+         </div>
+          <div class="col-lg-3 col-md-6 col-6 py-2 " >
+            <div class="card "  routerLink="/details" >
+                <img src="assets/485b30fd30b3226e09bb8f8e494c260b.png" alt="t-shirt">
+                <div class="card-body ">
+                    <h5 class="card-star1">Polo with Contrast Trims</h5>
+                    <div class="">
+                        <ul class="d-flex list-unstyled star1">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                       </div>
+                      
+                        <h4>$212</h4>
+                        
+
+                </div>
+              </div>
+         </div>
+          <div class="col-lg-3 col-md-6 col-6 py-2 " >
+            <div class="card "  routerLink="/details" >
+                <img src="assets/12942762aefb7c7ac954e78b76284504.png" alt="">
+                <div class="card-body ">
+                    <h5 class="card-star1">Polo with Contrast Trims</h5>
+                    <div class="">
+                        <ul class="d-flex list-unstyled star1">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                       </div>
+                       <div class="d-flex">
+                        <h4>$212</h4>
+                        <div class="d-flex" >
+                            <h4 class="px-1 pries text-decoration-line-through">$160</h4>
+                           <span class="badge text-bg-danger">-30%</span>
+                           </div>
+                       </div>
+
+                </div>
+              </div>
+         </div>
+    </div>
+  </div>
+  <app-footer></app-footer>

@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
+import { AuthLoginService } from 'src/assets/services/auth-login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +9,12 @@ import { FormControl, FormGroup, NgForm } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  LoginForm:FormGroup = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
-  })
+  constructor(private _AuthLoginService:AuthLoginService) { }
+
+  // LoginForm:FormGroup = new FormGroup({
+  //   email: new FormControl(''),
+  //   password: new FormControl(''),
+  // })
   user={
     email:"",
     password:""
@@ -20,6 +23,14 @@ export class LoginComponent {
     //  console.warn(Item)
     // debugger
      console.log(form)
+     this._AuthLoginService.setLogin(this.user).subscribe({
+      next: (result) => {
+        console.log(result);
+      },
+      error: (error) => {
+        console.error(error);
+      }
+     })
     }
 
 

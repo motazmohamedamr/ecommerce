@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Produtcs } from './../produtcs';
+import { Product } from '../models/product-vm';
 
 
 
@@ -15,7 +15,7 @@ export class ProductPageComponent {
 //  }
 searchInput: string = '';
 
-produtct: Produtcs[] =[
+produtct: Product[] =[
 
 
 ]
