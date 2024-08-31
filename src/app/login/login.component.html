@@ -21,9 +21,6 @@
        </div>
     </div>
 </div>
-
- 
-  
      <div class="container ">
         <div class="row " > 
             <div class="col-12  ">
@@ -34,8 +31,7 @@
                                 <div class=" d-flex justify-content-center align-items-center  ">
                                     <div class="col-lg-4  col-12 mx-auto">
                                         <label for="E-mail" > E-mail</label>
-                                        <input  required 
-                                       
+                                        <input  required  
                                         email="/^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/" 
                                         id="email" type="email" 
                                         class="form-control form "
@@ -44,34 +40,23 @@
                                           [(ngModel)]="user.email"
                                            #email="ngModel" 
                                           />
-
                                         <span *ngIf="email.invalid && email.touched" class="input"> enter  a valid  Email Address</span>
                                     </div>
-                                    
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                     <div class= " col-mb-12 lg-12 d-flex justify-content-center align-items-center " >
                         <div class="col-lg-4  col-12 mx-auto">
                             <label for="password" class=""> password</label>
                             <input required #password="ngModel" minlength="2" password="/^([A-Z][\d])([#@*]{1})([A-Za-z0-9]+)([\d]{3})$/" id="password" type="password" class="form-control form  " placeholder=" password" name="password"  ngModel />
                             <span *ngIf="password.invalid && password.touched" class="input">Password is  Required</span>
                         </div>
-                        
-                    </div>
-                  
+                    </div> 
                 </form>
-
             </div>
-
         </div>
-
      </div>
-   
-
 <div class="container">
     <div class="row">
         <div class="col-lg-12  check-input  ">
@@ -81,7 +66,6 @@
                     <label class="form-check-label" for="flexCheckIndeterminate">
                       Remember me
                     </label>
-                    
                   </div>
                   <div class="Forgot ">
                     <h6 class="forPassword">Forgot your password?</h6>
@@ -100,5 +84,4 @@
         </div>
         </form>
     </div>
-
 </div>

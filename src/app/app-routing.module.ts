@@ -9,6 +9,7 @@ import { ClinentSignInComponent } from './clinent-sign-in/clinent-sign-in.compon
 import { AddProductComponent } from './aad-product/add-product.component';
 import { DetailsComponent } from './details/details.component';
 import { ClientCartComponent } from './client-cart/client-cart.component';
+import { ClientSignUpComponent } from './client-sign-up/client-sign-up.component';
 
 const routes: Routes = [
   {path:"productPage",component:ProductPageComponent},
@@ -16,9 +17,11 @@ const routes: Routes = [
   {path:"add-product",component:AddProductComponent, },
   {path:'navbar',component:NavbarComponent},
   {path:'client', component:ClientHomePageComponent},
-  {path:'sign-in', component:ClinentSignInComponent},
+  {path:'signIn', component:ClinentSignInComponent},
   {path:"details/:id",component:DetailsComponent},
-  {path:"cart",component: ClientCartComponent}
+  {path:"cart",component: ClientCartComponent},
+  {path:'signUp', component:ClientSignUpComponent},
+  {path:'', redirectTo:'client' ,pathMatch:"full"}
   
 ];
 

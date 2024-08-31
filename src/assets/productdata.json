@@ -12,7 +12,7 @@
     "updatedOn":"2023-5-5",
    " onSale":false,
    "token" : "login123",
-   "productId":1234558
+   "productId":"1234558"
   },
 
   {
@@ -27,7 +27,7 @@
     "updatedOn":"2022-1-5",
     "onSale":false,
     "token" : "login123",
-    "productId":1236968
+    "productId":"1236968"
 
   },
   {
@@ -42,7 +42,7 @@
     "updatedOn":"2023-12-5",
     "onSale":true,
     "token" : "login123",
-    "productId":123498987
+    "productId":"123498987"
   },
   {
     "name": "Polo with Tipping Details",
@@ -56,7 +56,7 @@
     "updatedOn":"2022-1-5",
     "onSale":false,
     "token" : "login123",
-    "productId":123864984
+    "productId":"123864984"
 
   }
 

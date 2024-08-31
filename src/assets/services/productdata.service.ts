@@ -21,7 +21,7 @@ export class ProductdataService {
   //   this._HttpClient.get<Produtc[]>(`../assets/productdata.json/${id}`)
   // }
 
-  getProductById(id: number): Observable<Product> {
+  getProductById(id: string): Observable<Product> {
     return this._HttpClient.get<Product[]>(this._url).pipe(
       map((products) => {
         // debugger
@@ -38,10 +38,6 @@ export class ProductdataService {
       }),
     );
   }
-
-
-
-
 
       headers: any ={id:localStorage.getItem('id')}
 

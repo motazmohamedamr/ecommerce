@@ -29,9 +29,5 @@ export class AddProductComponent {
   height: new FormControl('',[Validators.required,Validators.minLength(5),Validators.maxLength(20)]),
   length: new FormControl('',[Validators.required,Validators.minLength(5),Validators.maxLength(20)]),
   width: new FormControl('hello',[Validators.required,Validators.minLength(5),Validators.maxLength(20)]),
-
  });
-
- 
-
 }

@@ -11,7 +11,6 @@ import { ProductdataService } from 'src/assets/services/productdata.service';
 
 // }
 export class ClientHomePageComponent implements OnInit, OnDestroy  {
- 
    isLoding: boolean = false;
 
    data: Product[] =[];
@@ -36,7 +35,4 @@ export class ClientHomePageComponent implements OnInit, OnDestroy  {
           console.log(res);
         })
         this._ProductdataService.getProducts
-   
-
-  
 }}

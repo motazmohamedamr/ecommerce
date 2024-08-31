@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <app-navbar></app-navbar>
-  
 <div class="px-3">
     <div class="d-flex">
       <h5>Home ></h5>  
@@ -9,11 +8,6 @@
       <h5>T-Shirts </h5>
     </div>
 </div>
- 
-
-
-
-
   <div class="container">
     <div class="row">
       <div class="col-lg-2 d-none d-sm-inline">
@@ -22,16 +16,13 @@
         <div class="col-lg-3"><img [src]=" this.product?.imgPath" alt="t-shirt" class="w-100"></div>
         </div>
         <div class="col-lg-4 ">
-          
           <img [src]="this.product?.imgPath" alt="" class="w-100">
-
         </div>
         <div class="col-lg-3 d-flex  d-lg-none">
           <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
           <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
           <div class="col-lg-3"><img [src]="this.product?.imgPath" alt="t-shirt" class="w-100"></div>
           </div>
-
           <div class="col-lg-6 ">
             <div>
               <h2>{{this.product?.name}}</h2>
@@ -59,17 +50,13 @@
              </div>
              <p>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
              <hr class="mb-lg-5">
-
              <div class="pt-lg-5">
               <div class="d-flex  ">
                 <button class="btn btn-dark col-lg-3 " type="button">+ 1 -</button>
-                <button class="btn btn-dark col-lg-7 px-5" (click)="StoreProduct()" [routerLink]="'/cart'"   type="button">Add to Cart</button>
+                <button class="btn btn-dark col-lg-7 px-5" (click)="addToCart()" [routerLink]="'/cart'"   type="button">Add to Cart</button>
                </div>
              </div>
-
-
             </div>
-
           </div>
           <div class="text-center">
             <h2>You might also like</h2>
@@ -105,7 +92,6 @@
                            <span class="badge text-bg-danger">-30%</span>
                            </div>
                        </div>
-
                 </div>
               </div>
          </div>
@@ -133,11 +119,7 @@
                             </li>
                         </ul>
                        </div>
-                     
                         <h4>$212</h4>
-                        
-                      
-
                 </div>
               </div>
          </div>
@@ -165,10 +147,7 @@
                             </li>
                         </ul>
                        </div>
-                      
                         <h4>$212</h4>
-                        
-
                 </div>
               </div>
          </div>
@@ -203,7 +182,6 @@
                            <span class="badge text-bg-danger">-30%</span>
                            </div>
                        </div>
-
                 </div>
               </div>
          </div>

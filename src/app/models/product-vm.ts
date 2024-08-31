@@ -1,15 +1,15 @@
 export interface Product {
     name :String;
-    price : string;
+    price :string;
     imgPath: string;
     description : string;
     type : string;
-    amount : string ;
+    amount : number ;
     isDeleted : boolean;
     createdOn : string;
    updatedOn:  string;
    onSale:boolean;
    token : string;
-    productId :number
+    productId :string
    
 }

@@ -1,0 +1,94 @@
+<div class="container py-5">
+    <div class="row ">
+        <div class="text-center py-2 ">
+            <svg width="162" height="46" viewBox="0 0 162 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M136.3 15.625H100.4V0.38501H119.36L136.3 15.625ZM101.4 14.625H133.7L118.98 1.38501H101.4V14.625Z"
+                    fill="black" />
+                <path
+                    d="M161.35 29.865H100.4V14.625H144.41L161.35 29.865ZM101.4 28.865H158.74L144.02 15.625H101.39V28.865H101.4Z"
+                    fill="black" />
+                <path
+                    d="M133.85 29.865H100.39V14.625H116.91L133.85 29.865ZM101.4 28.865H131.25L116.53 15.625H101.4V28.865Z"
+                    fill="black" />
+                <mask id="mask0_842_10800" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="161" height="46">
+                    <path d="M160.04 0.88501H0V45.615H160.04V0.88501Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_842_10800)">
+                    <path
+                        d="M149.68 44.115H111.22C105.25 44.115 100.4 39.265 100.4 33.295V28.875H132.74L149.68 44.115ZM101.4 29.875V33.295C101.4 38.715 105.81 43.115 111.22 43.115H147.08L132.36 29.875H101.4Z"
+                        fill="black" />
+                    <path
+                        d="M9.49 28.705V0.88501H0V28.835C0 36.995 6.62 43.615 14.78 43.615H19.52V34.125H14.91C11.92 34.125 9.49 31.695 9.49 28.705Z"
+                        fill="black" />
+                    <path
+                        d="M33.27 34.115V10.375H39.32C44.92 10.375 49.47 14.915 49.47 20.525V23.975C49.47 29.575 44.93 34.115 39.32 34.115H33.27ZM23.77 0.88501V43.615H39.61C50.29 43.615 58.95 34.955 58.95 24.275V20.225C58.95 9.54501 50.3 0.88501 39.62 0.88501H23.78H23.77Z"
+                        fill="black" />
+                    <path
+                        d="M93.44 10.375V0.88501H82.52C71.84 0.88501 63.18 9.54501 63.18 20.225V24.275C63.18 34.955 71.84 43.615 82.52 43.615H93.44V34.125H82.82C77.22 34.125 72.68 29.585 72.68 23.985V20.525C72.68 14.925 77.22 10.385 82.82 10.385H93.44V10.375Z"
+                        fill="black" />
+                </g>
+            </svg>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 mx-auto">
+                <div class="text-center">
+                    <h4>Join Our Community</h4>
+                </div>
+            </div>
+        </div>
+        <form [formGroup]="signUp " (ngSubmit)="signInClient()">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mx-auto">
+                    <label for="inputEmail4" class="form-label ">Email</label>
+                    <input formControlName="email" type="email" class="form-control input " id="inputEmail4"
+                        placeholder="E-mail">
+                    <div class="alert alert-danger" *ngIf="signUp.get('email')?.errors && signUp.get('email')?.touched">
+                        <p *ngIf="signUp.get('email')?.getError('required')">Name is Required</p>
+                        <p *ngIf="signUp.get('email')?.getError('email')">Please enter a valid email</p>
+                    </div>
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input formControlName="password" type="password" class="form-control input " id="inputPassword4"
+                        placeholder="password">
+                    <div class="alert alert-danger"
+                        *ngIf="signUp.get('password')?.errors && signUp.get('password')?.touched">
+                        <p *ngIf="signUp.get('password')?.getError('required')">Name is Required</p>
+                        <p *ngIf="signUp.get('password')?.getError('pattern')">Please enter a valid password</p>
+                    </div>
+                    <label for="inputPassword4" class="form-label">Confirm Password</label>
+                    <input formControlName="confirmPassword" type="password" class="form-control input "
+                        id="inputPassword4" placeholder="Confirm Password">
+                    <div class="alert alert-danger"
+                        *ngIf="signUp.get('confirmPassword')?.errors && signUp.get('confirmPassword')?.touched">
+                        <p *ngIf="signUp.get('confirmPassword')?.getError('required')">Name is Required</p>
+                        <p *ngIf="signUp.get('confirmPassword')?.getError('pattern')">Please enter a valid password</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mx-auto">
+                    <div class="d-flex  justify-content-between py-3 ">
+                        <div class="form-check  ">
+                            <input class="form-check-input " type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="Forgot px-5 ">
+                            <h6 class="forPassword">Forgot your password?</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-lg-6 col-md-12 mx-auto  ">
+                    <button (click)="signInClient()" class="btn btn-dark w-100" type="button">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        <div class="text-center py-5">
+            <h5>Don’t have an account? Sign in</h5>
+        </div>
+    </div>
+</div>

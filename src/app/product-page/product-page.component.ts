@@ -15,8 +15,5 @@ export class ProductPageComponent {
 //  }
 searchInput: string = '';
 
-produtct: Product[] =[
 
-
-]
 }

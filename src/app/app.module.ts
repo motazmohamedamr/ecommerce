@@ -19,6 +19,7 @@ import { ClientCartComponent } from './client-cart/client-cart.component';
 import { LoadingService } from 'src/assets/services/loding.service';
 import { httpLoadingInterceptor } from './my-http.interceptor';
 import { LoadingComponentComponent } from './loading-component/loading-component.component';
+import { ClientSignUpComponent } from './client-sign-up/client-sign-up.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { LoadingComponentComponent } from './loading-component/loading-component
     AddProductComponent,
     DetailsComponent,
     ClientCartComponent,
-    LoadingComponentComponent
+    LoadingComponentComponent,
+    ClientSignUpComponent
     
   ],
 
