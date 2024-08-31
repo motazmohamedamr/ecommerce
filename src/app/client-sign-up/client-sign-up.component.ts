@@ -19,6 +19,6 @@ export class ClientSignUpComponent {
   signInClient():void{
     console.log(this.signUp.value);
     localStorage.setItem('signUpUser', JSON.stringify(this.signUp.value));
-    alert(`${this.signUpUser} has been added to your cart.`);
+    alert(`${this.signUpUser} has been added to local storage.`);
   }
 }
